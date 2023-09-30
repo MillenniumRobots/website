@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');  /* Importar a fonte */
+
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Star';
+    src: url('../fontes/Starkiller.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Star Itallic';
+    src: url('../fontes/Starkiller\ Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Star Outline';
+    src: url('../fontes/Starkiller\ Outline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S Outline Itallic';
+    src: url('../fontes/Starkiller\ Outline\ Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --cor0: #e2dca6;
+    --cor01: #050502;
+    --cor02: #daf017;
+    --cor03: #E8CE02;
+    --cor04: #D9D00B;
+    --cor05: #EBB80A;
+    --cor06: #c79a07;
+    --cor07: #fbff1b;
+    --cor08: #664f05;
+
+    --corpreta01: #1c1c1c;
+    --corbranca: #fff;
+
+    --fontpadrao: 'Courier New', Courier, monospace;
+    --fontbold: 'Martian Mono';
+    --fonttitulos: 'Star Outline', Arial, sans-serif;
+    --fontdestaque: 'Mooli', cursive;
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fontpadrao);
+}
+
+
+header, nav {
+    display: flex;
+    flex-direction: row; /* Coloque column para ficar um embaixo do outro */
+    align-items: center;
+}
+
+header { 
+    background-color: var(--cor01);
+    box-shadow: 1px 1px 1px 4px var(--corpreta01);
+    height: 3.5em;
+    justify-content: space-between;
+    padding: 0 15%;
+}
+
+nav{ 
+    gap: 3em;
+    z-index: 2;
+}
+
+nav > a { 
+    text-decoration: none;
+    color: var(--cor02);
+    transition: 1s;
+    font-family: var(--fontbold);
+    font-size: 0.9em;
+}
+
+.active { 
+    background-color: rgb(48, 48, 48);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#Profille-image-conteiner{
+    max-width: 96px;
+    max-height: 96px;
+    display: inline-flex;
+    margin: auto 0;
+    align-items: center;
+    z-index: 3;
+}
+
+#Profille-image-conteiner > img {
+    display: inline-flex;
+    max-width: 96px;
+    max-height: 96px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.btn-icon-header{
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: var(--corbranca);
+    cursor: pointer;
+    max-width: 20px;
+    max-height: 20px;
+}
+
+footer {
+    background-color: var(--cor06);
+    color: white;
+    font-size: 0.8em;
+    padding: 5px;
+}
+ 
+footer a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+ 
+footer a:hover {
+    color: var(--cor05);
+    padding: 2px 6px;
+    border-radius: 2px;
+    background-color: var(--cor01);
+}
+
+#p-footer { 
+    margin: 0;
+    text-align: center;
+    font-size: 1.3em;
+    text-indent: 0;
+}
+
+main {
+    background-color: var(--corbranca);
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 3.75em 1.5em;
+    margin: 5px auto 50px auto;
+    transition: 1s;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.472);
+}
+
+main strong {
+    color: var(--cor03);
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px 1px black;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor01);
+    background-color: var(--cor03);
+    border-radius: 2px;
+    padding: 2px 6px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor01);
+}
+
+main a.externo::after {
+    content: '\00A0\1F517';
+}
+
+h1 { 
+    font-family: var(--fonttitulos);
+    font-size: 2em;
+    color: var(--cor06);
+}
+
+p { 
+    font-family: var(--fontdestaque);
+    font-size: 1.4em;
+    line-height: 2em;
+    margin: 20px;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: var(--corpreta01);
+        height: 100vh;
+        width: 35vw;
+        padding: 1em;
+        animation-duration: 1s;
+        margin-left: -100vw;
+    }
+
+    .btn-icon-header {
+        display: block; /* Mostrar os botões de navegação apenas quando a tela for menor que 768px */
+        background-color: transparent;
+        border: none;
+        color: var(--corbranca);
+        cursor: pointer;
+    }
+}
+
+@keyframes showsidebar {
+    from { 
+        margin-left: -100vw;
+    }
+
+    to {
+        margin-left: -15vw;
+    }
+}

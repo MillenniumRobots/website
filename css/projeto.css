@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+#twosection {
+    margin: 20px auto 0 auto;
+    padding: 2px;
+    text-align: center;
+    border: 5px solid var(--cor08);
+    max-width: 570px;
+    min-height: 80px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section a#button {
+    background-color: var(--cor06);
+    font-family: var(--fontbold );
+    padding: 5px;
+    color: var(--corbranca);
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.267);
+    margin-right: 20px;
+}
+
+section #button:hover {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px){
+    section h1 {
+        text-align: center;
+        font-size: 1.2em;
+    }
+    
+    section p {
+        font-size: 1em;
+    }
+
+    #twosection {
+        max-width: 370px;
+        min-height: 50px;
+    }
+
+    #twosection h2 {
+        font-size: 1em;
+    }
+
+    section a#button {
+        font-size: 0.8em;
+    }
+
+    section #button:hover {
+        text-decoration: none;
+        font-size: 0.9em;
+    }
+}
