@@ -1,51 +1,52 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define o conjunto de caracteres como UTF-8 */
 
 #section-conteiner {
-    margin: 20px auto 0 auto;
-    padding: 5px 0;
-    text-align: center;
-    border: 5px solid var(--cor08);
-    max-width: 400px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 20px auto 0 auto; /* Define as margens do elemento #section-conteiner */
+    padding: 5px 0; /* Define o preenchimento interno do elemento #section-conteiner */
+    text-align: center; /* Centraliza o texto dentro de #section-conteiner */
+    border: 5px solid var(--cor08); /* Define uma borda sólida de 5px com uma cor personalizada */
+    max-width: 400px; /* Define a largura máxima do elemento #section-conteiner */
+    border-radius: 5px; /* Define um raio de borda arredondada de 5px para #section-conteiner */
+    display: flex; /* Define um modelo de exibição flexível para o layout */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Centraliza os itens horizontalmente */
 }
 
 #section-conteiner a#button {
-    margin-left: 20px;
-    background-color: var(--cor06);
-    font-family: var(--fontbold );
-    padding: 5px;
-    color: var(--corbranca);
-    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.267);
+    margin-left: 20px; /* Define uma margem esquerda de 20px para o elemento com ID 'button' dentro de #section-conteiner */
+    background-color: var(--cor06); /* Define a cor de fundo para links com ID 'button' dentro de #section-conteiner */
+    font-family: var(--fontbold); /* Define a fonte para links com ID 'button' dentro de #section-conteiner */
+    padding: 5px; /* Define o preenchimento interno para links com ID 'button' dentro de #section-conteiner */
+    color: var(--corbranca); /* Define a cor do texto para links com ID 'button' dentro de #section-conteiner */
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.267); /* Adiciona uma sombra à caixa do botão */
 }
 
 #section-conteiner #button:hover {
-    text-decoration: none;
-    font-size: 18px;
+    text-decoration: none; /* Remove a sublinhado do link quando hover */
+    font-size: 18px; /* Aumenta o tamanho da fonte ao passar o mouse sobre o botão */
 }
 
+/* Define regras de estilo para telas com largura máxima de 768 pixels (dispositivos móveis) */
 @media screen and (max-width: 768px){
     section h1 {
-        text-align: center;
-        font-size: 1.8em;
+        text-align: center; /* Centraliza o texto do cabeçalho h1 */
+        font-size: 1.8em; /* Define o tamanho da fonte do cabeçalho h1 como 1.8 vezes o tamanho padrão */
     }
     
     section p {
-        font-size: 1.1em;
+        font-size: 1.1em; /* Define o tamanho da fonte dos parágrafos como 1.1 vezes o tamanho padrão */
     }
 
     section h2 {
-        font-size: 1.2em;
+        font-size: 1.2em; /* Define o tamanho da fonte do cabeçalho h2 como 1.2 vezes o tamanho padrão */
     }
 
     #section-conteiner a#button {
-        margin-left: 10px;
-        background-color: var(--cor06);
-        font-family: var(--fontbold );
-        padding: 5px;
-        color: var(--corbranca);
-        box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.267);
+        margin-left: 10px; /* Redefine a margem esquerda para links com ID 'button' dentro de #section-conteiner */
+        background-color: var(--cor06); /* Define a cor de fundo para links com ID 'button' dentro de #section-conteiner */
+        font-family: var(--fontbold); /* Define a fonte para links com ID 'button' dentro de #section-conteiner */
+        padding: 5px; /* Define o preenchimento interno para links com ID 'button' dentro de #section-conteiner */
+        color: var(--corbranca); /* Define a cor do texto para links com ID 'button' dentro de #section-conteiner */
+        box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.267); /* Adiciona uma sombra à caixa do botão */
     }
 }

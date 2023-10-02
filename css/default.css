@@ -1,38 +1,38 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define o conjunto de caracteres como UTF-8 */
 
-@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');  /* Importar a fonte */
-
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');  /* Importa a fonte 'Mooli' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@700&display=swap'); /* Importa a fonte 'Martian Mono' do Google Fonts */
 
 @font-face {
     font-family: 'Star';
-    src: url('../fontes/Starkiller.ttf') format('truetype');
+    src: url('../fontes/Starkiller.ttf') format('truetype'); /* Define uma fonte personalizada 'Star' usando o arquivo Starkiller.ttf */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Star Itallic';
-    src: url('../fontes/Starkiller\ Italic.ttf') format('truetype');
+    src: url('../fontes/Starkiller\ Italic.ttf') format('truetype'); /* Define outra fonte personalizada 'Star Itallic' */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Star Outline';
-    src: url('../fontes/Starkiller\ Outline.ttf') format('truetype');
+    src: url('../fontes/Starkiller\ Outline.ttf') format('truetype'); /* Define outra fonte personalizada 'Star Outline' */
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'S Outline Itallic';
-    src: url('../fontes/Starkiller\ Outline\ Italic.ttf') format('truetype');
+    src: url('../fontes/Starkiller\ Outline\ Italic.ttf') format('truetype'); /* Define outra fonte personalizada 'S Outline Itallic' */
     font-weight: normal;
     font-style: normal;
 }
 
 :root {
+    /* Define variáveis CSS para cores e fontes */
     --cor0: #e2dca6;
     --cor01: #050502;
     --cor02: #daf017;
@@ -50,7 +50,6 @@
     --fontbold: 'Martian Mono';
     --fonttitulos: 'Star Outline', Arial, sans-serif;
     --fontdestaque: 'Mooli', cursive;
-
 }
 
 * {
@@ -59,12 +58,13 @@
 }
 
 body {
+    /* Define estilos para o corpo da página */
     background-color: var(--cor0);
     font-family: var(--fontpadrao);
 }
 
-
 header, nav {
+    /* Define estilos para o cabeçalho e a navegação */
     display: flex;
     flex-direction: row; /* Coloque column para ficar um embaixo do outro */
     align-items: center;
@@ -78,159 +78,159 @@ header {
     padding: 0 15%;
 }
 
-nav{ 
-    gap: 3em;
-    z-index: 2;
+nav { 
+    gap: 3em; /* Define o espaçamento entre elementos filhos do elemento 'nav' como 3em */
+    z-index: 2; /* Define a ordem de empilhamento (z-index) do elemento 'nav' como 2 */
 }
 
 nav > a { 
-    text-decoration: none;
-    color: var(--cor02);
-    transition: 1s;
-    font-family: var(--fontbold);
-    font-size: 0.9em;
+    text-decoration: none; /* Remove a decoração de texto, como sublinhado, dos links dentro do elemento 'nav' */
+    color: var(--cor02); /* Define a cor do texto dos links como a variável CSS '--cor02' */
+    transition: 1s; /* Define uma transição suave de 1 segundo para propriedades animadas, como cor e tamanho */
+    font-family: var(--fontbold); /* Define a família de fontes dos links como a variável CSS '--fontbold' */
+    font-size: 0.9em; /* Define o tamanho da fonte dos links como 0.9em (90% do tamanho padrão) */
 }
 
 .active { 
-    background-color: rgb(48, 48, 48);
-    padding: 10px;
-    border-radius: 10px;
+    background-color: rgb(48, 48, 48); /* Define a cor de fundo do elemento com a classe 'active' como um tom de cinza escuro */
+    padding: 10px; /* Adiciona preenchimento interno de 10px ao elemento com a classe 'active' */
+    border-radius: 10px; /* Define um raio de borda de 10px para arredondar as bordas do elemento com a classe 'active' */
 }
 
-#Profille-image-conteiner{
-    max-width: 96px;
-    max-height: 96px;
-    display: inline-flex;
-    margin: auto 0;
-    align-items: center;
-    z-index: 3;
+#Profille-image-conteiner {
+    max-width: 96px; /* Define a largura máxima do elemento com o ID 'Profille-image-conteiner' como 96px */
+    max-height: 96px; /* Define a altura máxima do elemento com o ID 'Profille-image-conteiner' como 96px */
+    display: inline-flex; /* Define o elemento como um contêiner de nível de bloco com exibição flexível (para alinhar conteúdo horizontalmente) */
+    margin: auto 0; /* Define margem automática na parte superior e inferior e margem zero nas laterais do elemento */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro dentro do contêiner */
+    z-index: 3; /* Define a ordem de empilhamento (z-index) do elemento como 3 */
 }
 
 #Profille-image-conteiner > img {
-    display: inline-flex;
-    max-width: 96px;
-    max-height: 96px;
-    border-radius: 50%;
-    align-items: center;
-    justify-content: center;
-    margin: auto 0;
+    display: inline-flex; /* Define a imagem dentro do contêiner como um elemento flexível de nível de bloco */
+    max-width: 96px; /* Define a largura máxima da imagem como 96px */
+    max-height: 96px; /* Define a altura máxima da imagem como 96px */
+    border-radius: 50%; /* Define um raio de borda de 50% para criar uma imagem circular */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro dentro do contêiner */
+    justify-content: center; /* Alinha o conteúdo horizontalmente ao centro dentro do contêiner */
+    margin: auto 0; /* Define margem automática na parte superior e inferior e margem zero nas laterais da imagem */
 }
 
-.btn-icon-header{
-    display: none;
-    background-color: transparent;
-    border: none;
-    color: var(--corbranca);
-    cursor: pointer;
-    max-width: 20px;
-    max-height: 20px;
+.btn-icon-header {
+    display: none; /* Oculta os elementos com a classe 'btn-icon-header' por padrão */
+    background-color: transparent; /* Define a cor de fundo como transparente */
+    border: none; /* Remove a borda do elemento */
+    color: var(--corbranca); /* Define a cor do texto como a variável CSS '--corbranca' */
+    cursor: pointer; /* Define o cursor do mouse como um indicador de clique (mãozinha) */
+    max-width: 20px; /* Define a largura máxima como 20px */
+    max-height: 20px; /* Define a altura máxima como 20px */
 }
 
 footer {
-    background-color: var(--cor06);
-    color: white;
-    font-size: 0.8em;
-    padding: 5px;
+    background-color: var(--cor06); /* Define a cor de fundo do elemento 'footer' como a variável CSS '--cor06' */
+    color: white; /* Define a cor do texto como branco */
+    font-size: 0.8em; /* Define o tamanho da fonte como 0.8em (80% do tamanho padrão) */
+    padding: 5px; /* Adiciona preenchimento interno de 5px ao elemento 'footer' */
 }
- 
+
 footer a {
-    text-decoration: none;
-    font-weight: bolder;
-    color: white;
+    text-decoration: none; /* Remove a decoração de texto dos links dentro do elemento 'footer' */
+    font-weight: bolder; /* Define o peso da fonte como negrito */
+    color: white; /* Define a cor do texto como branco */
 }
- 
+
 footer a:hover {
-    color: var(--cor05);
-    padding: 2px 6px;
-    border-radius: 2px;
-    background-color: var(--cor01);
+    color: var(--cor05); /* Define a cor do texto dos links quando hover como a variável CSS '--cor05' */
+    padding: 2px 6px; /* Adiciona preenchimento interno de 2px na parte superior e inferior e 6px nas laterais dos links quando hover */
+    border-radius: 2px; /* Define um raio de borda de 2px para arredondar as bordas dos links quando hover */
+    background-color: var(--cor01); /* Define a cor de fundo dos links quando hover como a variável CSS '--cor01' */
 }
 
 #p-footer { 
-    margin: 0;
-    text-align: center;
-    font-size: 1.3em;
-    text-indent: 0;
+    margin: 0; /* Define a margem como zero */
+    text-align: center; /* Alinha o texto ao centro */
+    font-size: 1.3em; /* Define o tamanho da fonte como 1.3em (130% do tamanho padrão) */
+    text-indent: 0; /* Define o recuo do texto como zero */
 }
 
 main {
-    background-color: var(--corbranca);
-    min-width: 300px;
-    max-width: 1000px;
-    padding: 3.75em 1.5em;
-    margin: 5px auto 50px auto;
-    transition: 1s;
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.472);
+    background-color: var(--corbranca); /* Define a cor de fundo do elemento 'main' como a variável CSS '--corbranca' */
+    min-width: 300px; /* Define a largura mínima como 300px */
+    max-width: 1000px; /* Define a largura máxima como 1000px */
+    padding: 3.75em 1.5em; /* Adiciona preenchimento interno de 3.75em na parte superior e inferior e 1.5em nas laterais do elemento 'main' */
+    margin: 5px auto 50px auto; /* Define margens automáticas nas laterais e margem de 5px na parte superior e 50px na parte inferior */
+    transition: 1s; /* Define uma transição suave de 1 segundo para propriedades animadas, como cor e tamanho */
+    border-radius: 0 0 20px 20px; /* Define um raio de borda para arredondar as bordas da parte inferior do elemento 'main' */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.472); /* Adiciona uma sombra à caixa do elemento 'main' */
 }
 
 main strong {
-    color: var(--cor03);
-    font-weight: bold;
-    text-shadow: 0.5px 0.5px 1px black;
+    color: var(--cor03); /* Define a cor do texto forte (strong) como a variável CSS '--cor03' */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    text-shadow: 0.5px 0.5px 1px black; /* Adiciona uma sombra de texto para destacar */
 }
 
 main a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--cor01);
-    background-color: var(--cor03);
-    border-radius: 2px;
-    padding: 2px 6px;
+    text-decoration: none; /* Remove a decoração de texto dos links dentro de 'main' */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: var(--cor01); /* Define a cor do texto dos links como a variável CSS '--cor01' */
+    background-color: var(--cor03); /* Define a cor de fundo dos links como a variável CSS '--cor03' */
+    border-radius: 2px; /* Define um raio de borda de 2px para arredondar as bordas dos links */
+    padding: 2px 6px; /* Adiciona preenchimento interno de 2px na parte superior e inferior e 6px nas laterais dos links */
 }
 
 main a:hover {
-    text-decoration: underline;
-    color: var(--cor01);
+    text-decoration: underline; /* Adiciona sublinhado aos links quando hover */
+    color: var(--cor01); /* Define a cor dos links quando hover como a variável CSS '--cor01' */
 }
 
 main a.externo::after {
-    content: '\00A0\1F517';
+    content: '\00A0\1F517'; /* Adiciona um conteúdo após os links com a classe 'externo' */
 }
 
 h1 { 
-    font-family: var(--fonttitulos);
-    font-size: 2em;
-    color: var(--cor06);
+    font-family: var(--fonttitulos); /* Define a família de fontes do título 'h1' como a variável CSS '--fonttitulos' */
+    font-size: 2em; /* Define o tamanho da fonte do título como 2em (200% do tamanho padrão) */
+    color: var(--cor06); /* Define a cor do título como a variável CSS '--cor06' */
 }
 
 p { 
-    font-family: var(--fontdestaque);
-    font-size: 1.4em;
-    line-height: 2em;
-    margin: 20px;
-    text-indent: 50px;
-    text-align: justify;
+    font-family: var(--fontdestaque); /* Define a família de fontes dos parágrafos como a variável CSS '--fontdestaque' */
+    font-size: 1.4em; /* Define o tamanho da fonte dos parágrafos como 1.4em (140% do tamanho padrão) */
+    line-height: 2em; /* Define a altura da linha como 2em (o dobro do tamanho da fonte) */
+    margin: 20px; /* Define margens de 20px em todas as direções dos parágrafos */
+    text-indent: 50px; /* Define o recuo do texto na primeira linha como 50px */
+    text-align: justify; /* Justifica o texto */
 }
 
 @media screen and (max-width: 768px) {
     nav {
-        position: absolute;
-        flex-direction: column;
-        top: 0;
-        background-color: var(--corpreta01);
-        height: 100vh;
-        width: 35vw;
-        padding: 1em;
-        animation-duration: 1s;
-        margin-left: -100vw;
+        position: absolute; /* Define a posição do elemento 'nav' como absoluta */
+        flex-direction: column; /* Altera a direção dos elementos filhos para coluna */
+        top: 0; /* Define a posição superior como 0 */
+        background-color: var(--corpreta01); /* Define a cor de fundo como a variável CSS '--corpreta01' */
+        height: 100vh; /* Define a altura como 100% da altura da viewport (tela) */
+        width: 35vw; /* Define a largura como 35% da largura da viewport */
+        padding: 1em; /* Adiciona preenchimento interno de 1em */
+        animation-duration: 1s; /* Define a duração da animação como 1 segundo */
+        margin-left: -100vw; /* Define a margem esquerda como -100% da largura da viewport (para ocultar inicialmente) */
     }
 
     .btn-icon-header {
-        display: block; /* Mostrar os botões de navegação apenas quando a tela for menor que 768px */
-        background-color: transparent;
-        border: none;
-        color: var(--corbranca);
-        cursor: pointer;
+        display: block; /* Mostra os elementos com a classe 'btn-icon-header' quando a largura da viewport for menor que 768px */
+        background-color: transparent; /* Define a cor de fundo como transparente */
+        border: none; /* Remove a borda */
+        color: var(--corbranca); /* Define a cor do texto como a variável CSS '--corbranca' */
+        cursor: pointer; /* Define o cursor do mouse como um indicador de clique (mãozinha) */
     }
 }
 
 @keyframes showsidebar {
     from { 
-        margin-left: -100vw;
+        margin-left: -100vw; /* Define a margem esquerda inicial como -100% da largura da viewport */
     }
 
     to {
-        margin-left: -15vw;
+        margin-left: -15vw; /* Define a margem esquerda final como -15% da largura da viewport */
     }
 }

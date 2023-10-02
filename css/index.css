@@ -1,24 +1,25 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define o conjunto de caracteres para UTF-8 */
 
 #onesection {
-    margin-bottom: 100px;
+    margin-bottom: 100px; /* Define uma margem inferior de 100 pixels para o elemento com o ID 'onesection' */
 }
 
+/* Define regras de estilo para telas com largura máxima de 768 pixels (dispositivos móveis) */
 @media screen and (max-width: 768px) {
     p {
-        font-size: 1.1em;
+        font-size: 1.1em; /* Define o tamanho da fonte para parágrafos como 1.1 vezes o tamanho padrão */
     }
 
     main a {
-        font-size: 1em;
+        font-size: 1em; /* Define o tamanho da fonte para links dentro do elemento 'main' como o tamanho padrão */
     }
 
     h1 {
-        font-size: 1.7em;
-        text-align: center;
+        font-size: 1.7em; /* Define o tamanho da fonte para cabeçalhos h1 como 1.7 vezes o tamanho padrão */
+        text-align: center; /* Centraliza o texto dentro dos cabeçalhos h1 */
     }
 
     #onesection {
-        margin-bottom: 70px;
+        margin-bottom: 70px; /* Define uma margem inferior de 70 pixels para o elemento com o ID 'onesection' */
     }
 }

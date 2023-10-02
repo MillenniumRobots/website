@@ -1,45 +1,45 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define o conjunto de caracteres como UTF-8 */
 
 main {
-    flex-grow: 1;
+    flex-grow: 1; /* Define que o elemento 'main' deve crescer para ocupar todo o espaço disponível */
 }
 
 #lista {
-    margin-bottom: 50px;
+    margin-bottom: 50px; /* Define uma margem inferior de 50px para o elemento com ID 'lista' */
 }
 
 #lista h1 {
-    margin: 0 0 30px 0;
+    margin: 0 0 30px 0; /* Define margens para o cabeçalho h1 dentro de #lista */
 }
 
 .icon {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Define a direção da coluna para elementos com a classe 'icon' */
     width: 48px;
     height: 48px;
-    margin: 10px 0 10px 20px;
+    margin: 10px 0 10px 20px; /* Define margens para elementos com a classe 'icon' */
 }
 
 .conteiner {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid black;
-    margin: 10px 0;
-    border-radius: 10px;
+    flex-direction: row; /* Define a direção da linha para elementos com a classe 'conteiner' */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    border: 1px solid black; /* Define uma borda de 1px sólida em torno de elementos com a classe 'conteiner' */
+    margin: 10px 0; /* Define margens para elementos com a classe 'conteiner' */
+    border-radius: 10px; /* Define um raio de borda arredondada de 10px para elementos com a classe 'conteiner' */
 }
 
 .conteiner p {
-    margin: 0;
-    text-indent: 20px;
+    margin: 0; /* Remove margens em torno dos parágrafos dentro de elementos com a classe 'conteiner' */
+    text-indent: 20px; /* Define o recuo de texto à esquerda para os parágrafos dentro de elementos com a classe 'conteiner' */
 }
 
 #local {
-    margin-top: 100px;
+    margin-top: 100px; /* Define uma margem superior de 100px para o elemento com ID 'local' */
 }
 
 #local h1 {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Define uma margem inferior de 15px para o cabeçalho h1 dentro de #local */
 }
 
 /* Estilo para o contêiner do mapa */
@@ -49,7 +49,7 @@ main {
     /* Defina a proporção desejada (exemplo: 16:9) */
     padding-bottom: 56.25%; /* (altura / largura) * 100% */
     overflow: hidden;
-    border: 5px solid black;
+    border: 5px solid black; /* Define uma borda de 5px sólida em torno do contêiner do mapa */
 }
 
 /* Estilo para o iframe dentro do contêiner do mapa */
@@ -61,23 +61,23 @@ main {
     height: 100%;
 }
 
-
-@media screen and (max-width:520px){
+/* Estilos para telas com largura máxima de 520px (dispositivos móveis) */
+@media screen and (max-width: 520px){
     section h1 {
-        text-align: center;
-        font-size: 1.4em;
+        text-align: center; /* Centraliza o texto do cabeçalho h1 */
+        font-size: 1.4em; /* Define o tamanho da fonte do cabeçalho h1 como 1.4 vezes o tamanho padrão */
     }
     
     .icon {
-        margin: 10px 0 10px 8px;
+        margin: 10px 0 10px 8px; /* Redefine as margens para elementos com a classe 'icon' */
         display: flex;
-        flex-direction: column;
-        width: 24px;
-        height: 24px;
+        flex-direction: column; /* Define a direção da coluna para elementos com a classe 'icon' */
+        width: 24px; /* Redefine a largura para elementos com a classe 'icon' */
+        height: 24px; /* Redefine a altura para elementos com a classe 'icon' */
     }
 
     .conteiner p {
-        font-size: 1em;
-        text-indent: 5px;
+        font-size: 1em; /* Define o tamanho da fonte dos parágrafos como 1 vez o tamanho padrão */
+        text-indent: 5px; /* Redefine o recuo de texto à esquerda para os parágrafos */
     }
 }
